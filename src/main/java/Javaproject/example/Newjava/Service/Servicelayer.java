@@ -27,9 +27,10 @@ public class Servicelayer {
             empoyee.setName(name);
             empoyee.setPassword(password);
             return  emprepoy.save(empoyee);
+
         }
     }
-
+/// save data
     public  Empoyee authen(String email, String password){
         return  emprepoy.findByEmailAndPassword(email, password).orElse(null);
     }
