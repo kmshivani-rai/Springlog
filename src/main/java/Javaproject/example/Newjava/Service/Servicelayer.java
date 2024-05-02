@@ -37,8 +37,14 @@ public class Servicelayer {
 
 
 
+  public  Daolayer  restMth(){
+      Daolayer deolayer = new Daolayer();
+      deolayer.setName("shivanirai");
+      deolayer.setEmail("shivaniraishar12@gmail.com");
+      deolayer.setPassword("Edu123");
+      return  deolayer;
 
-
+  }
 
 
     public void getDaoObject(){
