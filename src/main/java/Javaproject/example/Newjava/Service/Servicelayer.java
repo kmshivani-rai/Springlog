@@ -61,7 +61,8 @@ public class Servicelayer {
         System.err.println("In Dao File: " +daolayer.getName());
     }
 
-     public List<Studentinfo> stInform(){
+     public List<Studentinfo> stInform()
+     {
 
          return studentinfo.findAll();
        /*  Studentinfo studentinfo = new Studentinfo();
