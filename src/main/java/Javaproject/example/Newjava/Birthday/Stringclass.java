@@ -60,4 +60,52 @@ public class CustomInitialsPrinter {
     }
 }
 
+ second solution
+
+class HelloWorld {
+    public static void main(String[] args) {
+        String str = "Shivani rai";
+         String  st = str.split(" ")[1];
+System.out.println(str.charAt(0) +"."+ Character.toUpperCase(st.charAt(0))+ st.substring(1,3));
+        System.out.println(" helloo  hi");
+    }
+}
+   3rd and easy way
+
+   import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your full name:");
+        String input = scanner.nextLine().trim(); // Read the input from user and trim any leading/trailing whitespace
+
+        if (input.isEmpty()) {
+            System.out.println("Input string is empty.");
+        } else {
+            String[] words = input.split("\\s+"); // Split the input into words based on one or more spaces
+            //StringBuilder initials = new StringBuilder(); // StringBuilder to store the initials
+
+            // Loop through all but the last word for initials
+            for (int i = 0; i < words.length - 1; i++) {
+                String word = words[i];
+                if (!word.isEmpty()) { // Check if the word is not empty
+                    System.out.print(Character.toUpperCase(word.charAt(0))+"."); // Append the first character and a period
+                }
+            }
+
+            // Append the last name in full
+          if (words.length > 0) {
+              String str = (words[words.length - 1]); // Append the last word in full
+           System.out.print(Character.toUpperCase(str.charAt(0))+ str.substring(1) ); // Append the last word in full
+
+            }
+
+        }
+
+    }
+}
+
+
+
 */
