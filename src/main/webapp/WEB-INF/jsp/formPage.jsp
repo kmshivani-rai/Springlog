@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Form Page</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -46,7 +47,7 @@
 <body>
 <div class="form-container">
   <h2>Submit Your Details</h2>
-  <form action="SubmitFormServlet" method="post">
+  <form action="" method="" id="registerForm" name="registerForm">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
 
@@ -68,8 +69,39 @@
     <label for="country">Country:</label>
     <input type="text" id="country" name="country" required>
 
-    <button type="submit">Submit</button>
+    <button type="button" onclick="saveregister()">Submit</button>
   </form>
 </div>
 </body>
+
+<script>
+  function saveregister() {
+    var form = $("#registerForm")[0]; // Corrected selector syntax
+    var data = new FormData(form);
+    var obj = {};
+
+    data.forEach(function(value, key) {
+      obj[key] = value;
+    });
+
+    var json = JSON.stringify(obj);
+
+    $.ajax({
+      url: "/rgtrsavedata", // Ensure this is the correct URL for your REST endpoint
+      type: "POST",
+      data: json,
+      contentType: 'application/json',
+      success: function(response) {
+        window.location.href = '/homepageurl'; // Redirecting to the homepage URL
+        $('#response').html("<p>" + response + "</p>");
+      },
+      error: function(xhr, status, error) {
+        console.log(error);
+        $("#response").html("<p>An error occurred: " + error + "</p>");
+      }
+    });
+  }
+
+
+</script>
 </html>

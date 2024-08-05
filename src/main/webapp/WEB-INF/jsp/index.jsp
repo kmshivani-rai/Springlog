@@ -14,15 +14,22 @@
 	<meta name="author" content="webThemez">    
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->     
-<link rel="stylesheet" href="css/bootstrap.min.css" />     
-<link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />	
-<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-<link rel="stylesheet" type="text/css" href="css/da-slider.css" />
-<link rel="stylesheet" href="css/styles.css"/>
+
+    <![endif]-->
+
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/Direcstatic/css/bootstrap.min.css"> <!-- Correct path to your CSS file -->
+	<script src="${pageContext.request.contextPath}/Direcstatic/js/script.js" defer></script> <!-- Correct path to your JS file -->
+
+
+<link rel="stylesheet" href="${pageContext.request.contextPath}/Direcstatic/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/Direcstatic/css/isotope.css" media="screen" />
+<link rel="stylesheet" href="${pageContext.request.contextPath}/Direcstatic/js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/Direcstatic/css/da-slider.css" />
+<link rel="stylesheet" href="${pageContext.request.contextPath}/Direcstatic/css/styles.css"/>
 <!-- Font Awesome -->
-<link href="font/css/font-awesome.min.css" rel="stylesheet">
+<link href="${pageContext.request.contextPath}/Direcstatic/font/css/font-awesome.min.css" rel="stylesheet">
 </head>
+
 
 <body>
 <header class="header">
@@ -46,6 +53,7 @@
 					<li><a href="#portfolio" class="scroll-link">Portfolio</a></li>
 					<li><a href="#team" class="scroll-link">Team</a></li>
 					<li><a href="#contactUs" class="scroll-link">Contact Us</a></li> 
+					<li><a href="/loginpage" class="scroll-link">Log in</a></li>
 	            </ul>
 	        </div>
 	        <!--/.navbar-collapse-->
@@ -222,10 +230,10 @@
 							  
                                 <article class="col-md-4isotopeItem webdesign">
 									<div class="portfolio-item">
-										<img src="images/portfolio/img1.jpg" alt="" />
+										<img src="../../Direcstatic/images/portfolio/img1.jpg" alt="" />
 										 <div class="portfolio-desc align-center">
 											<div class="folio-info">
-												<a href="images/portfolio/img1.jpg" class="fancybox"><h5>Project Name</h5>
+												<a href="../../Direcstatic/images/portfolio/img1.jpg" class="fancybox"><h5>Project Name</h5>
 												<i class="fa fa-plus-circle fa-2x"></i></a>
 											 </div>										   
 										 </div>
@@ -234,10 +242,10 @@
 
                                 <article class="col-md-4isotopeItem photography">
 									<div class="portfolio-item">
-										<img src="images/portfolio/img2.jpg" alt="" />
+										<img src="../../Direcstatic/images/portfolio/img2.jpg" alt="" />
 										 <div class="portfolio-desc align-center">
 											<div class="folio-info">
-												<a href="images/portfolio/img2.jpg" class="fancybox"><h5>Project Name</h5>
+												<a href="../../Direcstatic/images/portfolio/img2.jpg" class="fancybox"><h5>Project Name</h5>
 												<i class="fa fa-plus-circle fa-2x"></i></a>
 											 </div>										   
 										 </div>
@@ -247,10 +255,10 @@
 
                                 <article class="col-md-4isotopeItem photography">
 									<div class="portfolio-item">
-										<img src="images/portfolio/img3.jpg" alt="" />
+										<img src="../../Direcstatic/images/portfolio/img3.jpg" alt="" />
 										 <div class="portfolio-desc align-center">
 											<div class="folio-info">
-												<a href="images/portfolio/img3.jpg" class="fancybox"><h5>Project Name</h5>
+												<a href="../../Direcstatic/images/portfolio/img3.jpg" class="fancybox"><h5>Project Name</h5>
 												<i class="fa fa-plus-circle fa-2x"></i></a>
 											 </div>										   
 										 </div>
@@ -259,10 +267,10 @@
 
                                 <article class="col-md-4isotopeItem print">
 									<div class="portfolio-item">
-										<img src="images/portfolio/img4.jpg" alt="" />
+										<img src="../../Direcstatic/images/portfolio/img4.jpg" alt="" />
 										 <div class="portfolio-desc align-center">
 											<div class="folio-info">
-												<a href="images/portfolio/img4.jpg" class="fancybox"><h5>Project Name</h5>
+												<a href="../../Direcstatic/images/portfolio/img4.jpg" class="fancybox"><h5>Project Name</h5>
 												<i class="fa fa-plus-circle fa-2x"></i></a>
 											 </div>										   
 										 </div>
@@ -271,10 +279,10 @@
 
                                 <article class="col-md-4isotopeItem photography">
 									<div class="portfolio-item">
-										<img src="images/portfolio/img5.jpg" alt="" />
+										<img src="../../Direcstatic/images/portfolio/img5.jpg" alt="" />
 										 <div class="portfolio-desc align-center">
 											<div class="folio-info">
-												<a href="images/portfolio/img5.jpg" class="fancybox"><h5>Project Name</h5>
+												<a href="../../Direcstatic/images/portfolio/img5.jpg" class="fancybox"><h5>Project Name</h5>
 												<i class="fa fa-plus-circle fa-2x"></i></a>
 											 </div>										   
 										 </div>
@@ -283,10 +291,10 @@
 
                                 <article class="col-md-4isotopeItem webdesign">
 									<div class="portfolio-item">
-										<img src="images/portfolio/img6.jpg" alt="" />
+										<img src="../../Direcstatic/images/portfolio/img6.jpg" alt="" />
 										 <div class="portfolio-desc align-center">
 											<div class="folio-info">
-												<a href="images/portfolio/img6.jpg" class="fancybox"><h5>Project Name</h5>
+												<a href="../../Direcstatic/images/portfolio/img6.jpg" class="fancybox"><h5>Project Name</h5>
 												<i class="fa fa-plus-circle fa-2x"></i></a>
 											 </div>										   
 										 </div>
@@ -295,10 +303,10 @@
 
                                 <article class="col-md-4isotopeItem print">
 									<div class="portfolio-item">
-										<img src="images/portfolio/img7.jpg" alt="" />
+										<img src="../../Direcstatic/images/portfolio/img7.jpg" alt="" />
 										 <div class="portfolio-desc align-center">
 											<div class="folio-info">
-												<a href="images/portfolio/img7.jpg" class="fancybox"><h5>Project Name</h5>
+												<a href="../../Direcstatic/images/portfolio/img7.jpg" class="fancybox"><h5>Project Name</h5>
 												<i class="fa fa-plus-circle fa-2x"></i></a>
 											 </div>										   
 										 </div>
@@ -307,10 +315,10 @@
 
                                 <article class="col-md-4isotopeItem photography">
 									<div class="portfolio-item">
-										<img src="images/portfolio/img8.jpg" alt="" />
+										<img src="../../Direcstatic/images/portfolio/img8.jpg" alt="" />
 										 <div class="portfolio-desc align-center">
 											<div class="folio-info">
-												<a href="images/portfolio/img8.jpg" class="fancybox"><h5>Project Name</h5>
+												<a href="../../Direcstatic/images/portfolio/img8.jpg" class="fancybox"><h5>Project Name</h5>
 												<i class="fa fa-plus-circle fa-2x"></i></a>
 											 </div>										   
 										 </div>
@@ -319,10 +327,10 @@
 
                                 <article class="col-md-4isotopeItem print">
 									<div class="portfolio-item">
-										<img src="images/portfolio/img9.jpg" alt="" />
+										<img src="../../Direcstatic/images/portfolio/img9.jpg" alt="" />
 										 <div class="portfolio-desc align-center">
 											<div class="folio-info">
-												<a href="images/portfolio/img9.jpg" class="fancybox"><h5>Project Name</h5>
+												<a href="../../Direcstatic/images/portfolio/img9.jpg" class="fancybox"><h5>Project Name</h5>
 												<i class="fa fa-plus-circle fa-2x"></i></a>
 											 </div>										   
 										 </div>
@@ -355,7 +363,7 @@
 											<!-- Image Hover Block -->
 											<div class="member-img">
 												<!-- Image  -->
-												<img class="img-responsive" src="images/photo-1.jpg" alt=""> 
+												<img class="img-responsive" src="../../Direcstatic/images/photo-1.jpg" alt="">
 											</div>
 											<!-- Member Details -->
 											<h3>John Doe</h3>
@@ -372,7 +380,7 @@
 											<!-- Image Hover Block -->
 											<div class="member-img">
 												<!-- Image  -->
-												<img class="img-responsive" src="images/photo-2.jpg" alt=""> 
+												<img class="img-responsive" src="../../Direcstatic/images/photo-2.jpg" alt="">
 											</div>
 											<!-- Member Details -->
 											<h3>Larry Doe</h3>
@@ -389,7 +397,7 @@
 											<!-- Image Hover Block -->
 											<div class="member-img">
 												<!-- Image  -->
-												<img class="img-responsive" src="images/photo-3.jpg" alt=""> 
+												<img class="img-responsive" src="../../Direcstatic/images/photo-3.jpg" alt="">
 											</div>
 											<!-- Member Details -->
 											<h3>Ranith Kays</h3>
@@ -406,7 +414,7 @@
 											<!-- Image Hover Block -->
 											<div class="member-img">
 												<!-- Image  -->
-												<img class="img-responsive" src="images/photo-4.jpg" alt=""> 
+												<img class="img-responsive" src="../../Direcstatic/images/photo-4.jpg" alt="">
 											</div>
 											<!-- Member Details -->
 											<h3>Joan Ray</h3>
@@ -534,13 +542,13 @@
     <a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
 
 <!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
-<script src="js/modernizr-latest.js"></script>
-<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>    
-<script src="js/bootstrap.min.js" type="text/javascript"></script>	 
-<script src="js/jquery.isotope.min.js" type="text/javascript"></script>
-<script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script> 
-<script src="js/jquery.nav.js" type="text/javascript"></script>
-<script src="js/jquery.cslider.js" type="text/javascript"></script>
-<script src="js/custom.js" type="text/javascript"></script>
+<script src="../../Direcstatic/js/modernizr-latest.js"></script>
+<script src="../../Direcstatic/js/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="../../Direcstatic/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../../Direcstatic/js/jquery.isotope.min.js" type="text/javascript"></script>
+<script src="../../Direcstatic/js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+<script src="../../Direcstatic/js/jquery.nav.js" type="text/javascript"></script>
+<script src="../../Direcstatic/js/jquery.cslider.js" type="text/javascript"></script>
+<script src="../../Direcstatic/js/custom.js" type="text/javascript"></script>
 </body>
 </html>
