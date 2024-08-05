@@ -12,7 +12,7 @@
   <h1>Welcome to My Website</h1>
   <nav>
     <ul>
-      <li><a href="../../../resources/templates/index.jsp">Home</a></li>
+      <li><a href="index2.jsp">Home</a></li>
       <li><a href="about.jsp">About</a></li>
       <li><a href="contact.jsp">Contact</a></li>
       <li><a href="login.jsp">Login</a></li>

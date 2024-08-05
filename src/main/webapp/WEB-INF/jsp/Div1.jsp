@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Login Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
             display: flex;
-
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -54,37 +54,49 @@
 <body>
 <div class="login-container">
     <h2>Login</h2> <!--LoginServlet-->
-    <form action="#" method="" id="frm">
+    <form action="" method="" id="frm" name="frm">
         <label for="email">Email:</label>
-        <input type="text" id="email" name="email" required>
+        <input type="email" id="email" name="email" required>
 
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
 
-        <button  onclick="save();">Login</button>
+        <button type="button" onclick="save()">Login</button>
+
     </form>
-<!--    <a href="ForgotPassword.jsp">Forgot Password?</a>-->
+    <a href="ForgotPassword.jsp">Forgot Password?</a>
 </div>
 </body>
+
 <script>
     function save()
     {
-        var form=("#frm")[0];
-        var data=new FormData(form);
+        var form = $('#frm')[0];
+        var data = new FormData(form);
+        var object = {};
+        data.forEach(function(value, key){
+            object[key] = value;
+        });
+
+        // Stringify the object
+        var json = JSON.stringify(object);
         $.ajax({
-            url: '/rest/saveData', // The URL to the PHP script that will handle the form data
+            url: '/saveData', // The URL to the PHP script that will handle the form data
             type: 'POST',
-            data: data, // Serialize the form data
+            data: json, // Serialize the form data
+            contentType: 'application/json', // Ensure jQuery does not set the content type
+            // processData: false,
             success: function(response){
-                // Display the response from the server
-                // window.location="formPage.jsp";
+                  window.location.href = '/register';
 
+              //  window.location.href = response.url;
 
-                $("#response").html("<p>" + response + "</p>");
+                $('#response').html("<p>" + response + "</p>");
             },
             error: function(xhr, status, error){
                 // Handle any errors that occurred during the request
-                console.error("Error: " + status + " - " + error);
+                // console.error("Error: " + status + " - " + error);
+                console.log(error);
                 $("#response").html("<p>An error occurred: " + error + "</p>");
             }
         });
@@ -95,4 +107,5 @@
 
     }
 </script>
+
 </html>
