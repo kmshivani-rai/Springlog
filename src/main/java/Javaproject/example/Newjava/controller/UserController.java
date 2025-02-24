@@ -19,10 +19,7 @@ public class UserController {
        //registerService.saveregister
         return "formPage";
     }
-
-
-
-
+    
 
 
     @RequestMapping("/digb")
