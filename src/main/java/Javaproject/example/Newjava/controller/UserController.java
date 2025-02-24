@@ -19,8 +19,6 @@ public class UserController {
        //registerService.saveregister
         return "formPage";
     }
-    
-
 
     @RequestMapping("/digb")
        // @ResponseBody  // Method
@@ -36,19 +34,14 @@ public class UserController {
 
         return "Div1";
            }
-
-
     @RequestMapping("/homepageurl")
     public  String getwebster(){
         return "Homepage";
 
     }
-
     @RequestMapping("/indexpage")
     public  String getindexpage(){
         return "index";
     }
-
-
 
 }
